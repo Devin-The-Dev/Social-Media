@@ -8,6 +8,12 @@ html {
 
 a {
   text-decoration: none;
+  color: #2196F3;
+  transition: all .2s ease-in-out;
+}
+
+a:hover {
+  color: red;
 }
 
 /*header*/
@@ -22,10 +28,6 @@ header a {
   text-decoration: none;
   font-size: 14px;
   font-weight: 300;
-}
-
-.fas {
-  color: #fff;
 }
 
 .logo-area {
@@ -159,7 +161,7 @@ header a {
   max-width: 380px;
 }
 
-.side-column .widget-box {
+ .widget-box {
   padding: 15px;
   background: #fff;
   margin: 0 0 15px 0;
@@ -168,11 +170,11 @@ header a {
   overflow: auto;
 }
 
-.side-column .widget-box .head .widget-icon-container {
+ .widget-box .head .widget-icon-container {
   display: inline-block;
 }
 
-.side-column .widget-box .head .widget-icon {
+.widget-box .head .widget-icon {
   background: #BFBFBF;
   height: 40px;
   width: 40px;
@@ -183,17 +185,18 @@ header a {
   justify-content: center;
 }
 
-.side-column .widget-box .head .widget-icon .fas{
+ .widget-box .head .widget-icon .fas {
   max-width: 50%;
   font-size: 22px;
+  color: white;
 }
 
-.side-column .widget-box .head .widget-title {
+ .widget-box .head .widget-title {
   display: inline-block;
   padding: 0 0 0 10px;
 }
 
-.side-column .widget-box .body {
+ .widget-box .body {
   padding: 20px 0;
 }
 
@@ -207,8 +210,101 @@ header a {
   background-position: center;
 }
 
+/*Content right*/
+
 .main-area {
   width: 55%;
   margin: 0 2.5%;
   float: left;
+}
+
+.main-area .widget-box.submenu{
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.main-area .submenu ul{
+  padding: 0;
+  margin: 0;
+}
+
+.main-area .submenu ul li{
+  display: block;
+  padding: 10px;
+  width: 20%;
+  float: left;
+  text-align: center;
+  border-bottom: 3px solid #fff;
+  transition: all .4s ease-in-out;
+  cursor: pointer;
+}
+
+.main-area .submenu ul li:hover{
+  border-bottom: 3px solid #2196F3;
+  color: #2196F3;
+}
+
+.main-area .submenu ul li:nth-child(5) {
+  padding: 28px 0 21px;
+}
+
+.main-area .submenu ul li .fa{
+  font-size: 20px;
+}
+
+.main-area .submenu ul li span{
+  display: block;
+  margin: 15px 0 0 0;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+/*.main-area .widget-box.post .head {
+
+}*/
+
+.main-area .widget-box.post .head .user-img-container {
+  width: 8%;
+  display: block;
+  overflow: auto;
+  float: left;
+}
+
+.main-area .widget-box.post .head .user-img{
+  display: block;
+  float: left;
+  background: url(img/chloe.jpg) no-repeat center center;
+  background-size: cover;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.main-area .widget-box.post .head .post-info{
+  display: block;
+  float: left;
+  width: 92%;
+}
+
+.main-area .widget-box.post .head::after{
+  content: "";
+  clear: both;
+  margin: 4px 0 6px 0;
+}
+
+.main-area .widget-box.post .head .post-info .user-info{
+  display: block;
+  font-size: 14px;
+  margin: 4px 0 5px 0;
+}
+
+.main-area .widget-box.post .head .post-info .post-date{
+  display: block;
+  font-size: 12px;
+  color: #ABABAB;
+}
+
+.main-area .widget-box.post .body .post-img  img{
+  width: 100%;
+  
 }
